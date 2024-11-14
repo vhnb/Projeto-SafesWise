@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #fff;
+}
+
+.container .contentHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 60vh;
+    width: 100%;
+    background-color: #000000ee;
+}
+
+.container .contentHome .contentSizeHome {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.container .contentHome .contentSizeHome img {
+    height: auto;
+    width: 300px;
+}
+
+.container .contentHome .contentSizeHome .contentHomeInfos {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+.container .contentHome .contentSizeHome .contentHomeInfos h1 {
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.container .contentHome .contentSizeHome .contentHomeInfos p {
+    color: #d2d2d2;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.container .contentHome .contentSizeHome .contentHomeInfos a {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #3e60db;
+    border: 1px solid #3e60db;
+    text-decoration: none;
+    transition: 0.2s;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.container .contentHome .contentSizeHome .contentHomeInfos a:hover {
+    background-color: #3e60db;
+    transition: 0.2s;
+    color: #fff;
+}
+
+.container .contentMembers {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: 60vh;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.container .contentMembers .sizeContainerMembers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1300px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .container .contentHome .contentSizeHome img {
+        display: none;
+    }
+
+    .container .contentHome {
+        min-height: 75vh;
+        border-bottom-right-radius: 0%;
+        padding: 12px;
+    }
+
+    .container .contentHome .contentSizeHome {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .contentHome .contentSizeHome .contentHomeInfos {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .contentHome .contentSizeHome .contentHomeInfos h1 {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 40px;
+    }
+
+    .container .contentHome .contentSizeHome .contentHomeInfos p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+}

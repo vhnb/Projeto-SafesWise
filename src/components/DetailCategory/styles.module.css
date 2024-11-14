@@ -1,0 +1,18 @@
+.detailsCategory {
+    border: 1px solid #00000090;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.detailsCategory ul {
+    padding: 10px 10px;
+    list-style: none;
+}
+
+.detailsCategory ul li {
+    padding: 3px;
+}
+
+.detailsCategory ul li a {
+    color: #000;
+}

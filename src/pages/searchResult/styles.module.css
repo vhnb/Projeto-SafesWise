@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #fff;
+}
+
+.container .contentHome {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.container .contentHome h1 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .contentHome h1 span {
+    font-weight: 600;
+}
+
+.container .contentHome .contentSearchCourses {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .contentHome .contentSearchCourses p span{
+    font-weight: 600;
+}
+
+@media screen and (max-width: 800px) {
+    .container .contentHome h1 {
+        font-size: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .container .contentHome .contentSearchCourses p{
+        text-align: center;
+    }
+    .container .contentHome .contentSearchCourses {
+        justify-content: center;
+    }
+}

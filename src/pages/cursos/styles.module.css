@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #fff;
+}
+
+.container .contentHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 40vh;
+    width: 100%;
+    background-color: #000000ee;
+    margin-bottom: 25px;
+}
+
+.container .contentHome h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 1000px;
+    font-weight: 600;
+}
+
+.container .contentHome p {
+    color: #d2d2d2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container .contentCourses {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.container .contentCourses .contentSizeCourses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.container .contentCourses .contentSizeCourses .contentProductsCourses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container .contentCourses .contentSizeCourses .contentProductsCourses .containerLoading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .contentHome h1 {
+        color: #fff;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 15px;
+        width: 300px;
+        font-weight: 600;
+    }
+    .container .contentHome p {
+        color: #d2d2d2;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .container .contentCourses .contentSizeCourses .contentProductsCourses {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,109 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+    background-color: #000000ee;
+    border-top: 1px solid #1d1d1d;
+}
+
+.footer .contentFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.footer .contentFooter .contentInfoAboutSafesWise {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer .contentFooter .contentInfoAboutSafesWise h1 {
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 20px;
+    color: #d7d7d7;
+}
+
+.footer .contentFooter .contentInfoAboutSafesWise h1 span {
+    color: rgb(62, 96, 219);
+    filter: drop-shadow(5px 5px 15px rgba(62, 96, 219, 0.72));
+}
+
+.footer .contentFooter .contentInfoAboutSafesWise p {
+    color: #c8c8c8;
+    font-size: 12px;
+}
+
+.footer .contentFooter form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .contentFooter form input {
+    padding: 6px 12px;
+    font-size: 14px;
+    border: 1px solid #dadada90;
+    margin-right: 5px;
+    height: 40px;
+    background-color: #111111;
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+.footer .contentFooter form input:focus {
+    border: 1px solid #fff;
+    transition: 0.3s;
+}
+
+.footer .contentFooter form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin: 0px 4px 0px 4px;
+    font-size: 14px;
+    border: 1px solid #dadada90;
+    color: #dadada90;
+    background-color: #111111;
+    padding: 6px 12px;
+    transition: 0.2s;
+}
+
+.footer .contentFooter form button:hover {
+    color: #111;
+    background-color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer .contentFooter {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer .contentFooter .contentInfoAboutSafesWise {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .footer .contentFooter .contentInfoAboutSafesWise h1 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .footer .contentFooter .contentInfoAboutSafesWise p {
+        margin-bottom: 20px;
+    }
+
+    .footer .contentFooter form {
+        margin-bottom: 30px;
+    }
+}

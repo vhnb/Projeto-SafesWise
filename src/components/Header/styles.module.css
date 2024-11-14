@@ -1,0 +1,466 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    z-index: 999;
+    background-color: #fff;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.contentHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.contentHeader h1 {
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.contentHeader h1 span {
+    color: rgb(62, 96, 219);
+    filter: drop-shadow(5px 5px 15px rgba(62, 96, 219, 0.72));
+}
+
+.contentHeader .contentInputHeader {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid #00000090;
+    height: 40px;
+    width: 400px;
+}
+
+.contentHeader .contentInputHeader input {
+    border: none;
+    height: 38px;
+    width: 350px;
+    outline: none;
+    font-size: 15px;
+}
+
+.contentHeader nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentHeader nav a {
+    color: #000;
+    font-size: 14px;
+    margin: 0px 8px 0px 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contentHeader nav a:hover {
+    cursor: pointer;
+    color: rgb(62, 96, 219);
+    transition: 0.3s;
+}
+
+.contentHeader .line {
+    height: 40px;
+    width: 0.5px;
+    padding: 0.5px;
+    background-color: #cfcfcf;
+}
+
+.contentHeader .contentActionsHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contentHeader .contentActionsHeader button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin: 0px 4px 0px 4px;
+    font-size: 14px;
+    border: 1px solid #00000090;
+    background-color: #fff;
+    padding: 6px 12px;
+    transition: 0.2s;
+}
+
+.contentHeader .contentActionsHeader .iconMenu {
+    display: none;
+}
+
+.contentHeader .contentActionsHeader button:hover {
+    background-color: #000;
+    transition: 0.2s;
+    color: #fff;
+}
+
+.contentHeader .contentActionsHeader .containerMenu .contentMenu {
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 8px;
+    border: 1px solid #00000090;
+}
+
+.contentHeader .contentActionsHeader .containerMenu .contentMenu li a {
+    padding: 8px;
+    transition: 0.2s;
+    font-size: 14px;
+}
+
+.contentHeader .contentActionsHeader .containerMenu .contentMenu li a:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contentHeader .contentActionsHeader .containerMenu .contentMenu li .btnLogout {
+    color: rgb(209, 51, 51);
+    transition: 0.2s;
+}
+
+.contentHeader .contentActionsHeader .containerMenu .contentMenu li .btnLogout:hover {
+    transition: 0.2s;
+    background-color: rgb(209, 51, 51);
+    color: #fff;
+}
+
+.containerAsideMenu {
+    background-color: #fff;
+    border-left: 1px solid #00000090;
+}
+
+.containerAsideMenu .menuHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.containerAsideMenu .menuHeader button {
+    border: 1px solid #00000090;
+    background-color: #fff;
+    padding: 6px 12px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.containerAsideMenu .menuHeader button:hover {
+    transition: 0.2s;
+    background-color: #000;
+    color: #fff;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    border-bottom: 1px solid #0000002c;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser img {
+    height: 120px;
+    width: 120px;
+    margin-right: 10px;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart h2 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart p {
+    font-weight: 600;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart button {
+    border: 1px solid rgb(209, 51, 51);
+    color: rgb(209, 51, 51);
+    background-color: #fff;
+    font-weight: 600;
+    padding: 4px 8px;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(209, 51, 51);
+    transition: right 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart button:hover:before {
+    right: 0;
+}
+
+.containerAsideMenu .menuBody .containerItemsCartUser .contentInfoItemCart button:hover {
+    color: #fff;
+}
+
+.containerAsideMenu .menuBody .btnConfirmCart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3e60db;
+    padding: 8px;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.containerAsideMenu .menuBody .btnConfirmCart:hover {
+    transition: 0.3s;
+    background-color: #2f4db7;
+}
+
+.containerAsideMenu .menuBodyMobile {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+
+.containerAsideMenu .menuBodyMobile .optionMenuMobile {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    border: 1px solid #00000090;
+    padding: 8px;
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.containerAsideMenu .menuBodyMobile .containerMenuMobile {
+    width: 100%;
+    border: 1px solid #00000090;
+    margin-bottom: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.containerAsideMenu .menuBodyMobile .containerMenuMobile button {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #fff;
+}
+
+.containerAsideMenu .menuBodyMobile .containerMenuMobile .contentMenuMobile {
+    background-color: #fff;
+    border-radius: 0px;
+    padding: 8px;
+    border: 1px solid #00000090;
+    width: 100%;
+    filter: drop-shadow(0px 0px 10px #0000001e);
+}
+
+.containerAsideMenu .menuBodyMobile .containerMenuMobile .contentMenuMobile li a {
+    padding: 8px;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+.containerAsideMenu .menuBodyMobile .containerMenuMobile .contentMenuMobile li a:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.containerAsideMenu .menuBodyMobile .containerMenuMobile .contentMenuMobile .btnLogout {
+    background-color: rgb(209, 51, 51);
+    color: #fff;
+}
+
+.containerAsideMenu .menuBodyMobile form {
+    width: 100%;
+}
+
+.containerAsideMenu .menuBodyMobile .containerSearchInputMobile {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #00000090;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.containerAsideMenu .menuBodyMobile .containerSearchInputMobile input {
+    border: none;
+    height: 38px;
+    width: 350px;
+    outline: none;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contentHeader nav {
+        display: none;
+    }
+
+    .contentHeader .contentActionsHeader .functionCartUser {
+        display: flex;
+    }
+
+    .contentHeader .contentActionsHeader .iconMenu {
+        display: flex;
+    }
+
+    .contentHeader .contentInputHeader {
+        width: 300px;
+    }
+}
+
+.containerModal .dialogModal .contentModal {
+    border-radius: 0px;
+}
+
+.containerModal .dialogModal .contentModal .modalBody form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal .modalBody form input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.containerModal .dialogModal .contentModal .modalBody form select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.containerModal .dialogModal .contentModal .modalBody button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(51, 114, 209);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal .modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerModal .dialogModal .contentModal .modalHeader button {
+    border: 1px solid #00000090;
+    background-color: #fff;
+    padding: 4px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.containerModal .dialogModal .contentModal .modalHeader button:hover {
+    transition: 0.2s;
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 900px) {
+    .contentHeader nav {
+        display: none;
+    }
+
+    .contentHeader .contentActionsHeader .btnLogin {
+        display: none;
+    }
+
+    .contentHeader .contentInputHeader {
+        display: none;
+    }
+
+    .contentHeader .line {
+        display: none;
+    }
+
+    .contentHeader .contentActionsHeader .btnHeader {
+        display: none;
+    }
+
+    .contentHeader .contentActionsHeader .iconMenu {
+        display: flex;
+    }
+
+    .contentHeader .contentInputHeader {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .contentHeader .contentInputHeader {
+        display: none;
+    }
+
+    .contentHeader .line {
+        display: none;
+    }
+}

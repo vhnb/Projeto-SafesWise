@@ -1,0 +1,42 @@
+.containerMemberSW {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #00000090;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.containerMemberSW img {
+    height: 150px;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.containerMemberSW .contentInfoMember  {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.containerMemberSW .contentInfoMember h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+    .containerMemberSW {
+        flex-direction: column;
+    }
+    .containerMemberSW img {
+        height: 300px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,178 @@
+.containerLoading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #111111;
+}
+
+.container .contentHome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 60vh;
+    width: 100%;
+    background-color: #111111;
+    margin-bottom: 25px;
+}
+
+.containerCourse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+}
+
+.container .contentHome img {
+    margin-right: 40px;
+    height: 350px;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container .contentHome .infoDetailCourse {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .contentHome .infoDetailCourse .btnToHome {
+    border: none;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #111;
+}
+
+.container .contentHome .infoDetailCourse .btnToHome:hover {
+    transition: 0.2s;
+}
+
+.container .contentHome .infoDetailCourse h1 {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.container .contentHome .infoDetailCourse h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #c9c9c9;
+}
+
+.container .contentHome .infoDetailCourse h3 {
+    font-size: 22px;
+    color: #61dd4d;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.container .contentHome .infoDetailCourse p {
+    margin-bottom: 10px;
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.container .contentHome .infoDetailCourse .btnAddToCart {
+    border: 1px solid rgb(62, 96, 219);
+    background-color: #111111;
+    padding: 10px 25px;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: rgb(62, 96, 219);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.container .contentHome .infoDetailCourse .btnAddToCart::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgb(62, 96, 219);
+    transition: right 0.4s ease-in-out;
+    z-index: -1;
+}
+
+.container .contentHome .infoDetailCourse .btnAddToCart:hover:before {
+    right: 0;
+}
+
+.container .contentHome .infoDetailCourse .btnAddToCart:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+    .containerCourse {
+        flex-direction: column;
+    }
+
+    .container .contentHome img {
+        margin-right: 0px;
+        height: 250px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .container .contentHome .infoDetailCourse {
+        display: flex;
+        align-items: start;
+        justify-content: start;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .contentHome .infoDetailCourse h1 {
+        font-size: 23px;
+        margin-bottom: 20px;
+    }
+
+    .container .contentHome .infoDetailCourse h2 {
+        margin-bottom: 10px;
+    }
+
+    .container .contentHome .infoDetailCourse p {
+        margin-bottom: 10px;
+    }
+
+    .container .contentHome .infoDetailCourse .btnAddToCart {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .container .contentHome .infoDetailCourse .btnToHome {
+        width: 100%;
+        justify-content: start;
+        margin-bottom: 20px;
+    }
+}

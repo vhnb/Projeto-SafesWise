@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #000000ee;
+}
+
+.container h1 {
+    color: #fff;
+}
+
+.container p {
+    color: #c9c9c9;
+}

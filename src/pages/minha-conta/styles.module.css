@@ -1,0 +1,361 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    min-height: calc(100vh - 70px);
+    background-color: #fff;
+}
+
+.container .contentMyAccount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1300px;
+    width: 90%;
+}
+
+.container .contentMyAccount .containerUser {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #00000090;
+    margin-top: 18px;
+}
+
+.container .contentMyAccount .containerUser img {
+    height: 80px;
+    width: 80px;
+    margin-right: 15px;
+}
+
+.container .contentMyAccount .containerUser .containerInfoUser {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .contentMyAccount .containerUser .containerInfoUser h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.container .contentMyAccount .containerUser .containerInfoUser h1 span {
+    font-size: 11px;
+    background-color: #3e60db;
+    padding: 4px 6px;
+    color: #fff;
+}
+
+.container .contentMyAccount .containerUser .containerInfoUser h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container .contentMyAccount .containerLoading {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.container .contentMyAccount .containerCursosUser {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #00000090;
+    margin-top: 15px;
+}
+
+.container .contentMyAccount .containerCursosUser h1 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.container .contentMyAccount .containerCursosUser p {
+    font-size: 15px;
+}
+
+.container .contentMyAccount .containerCursosUser p a {
+    color: #000;
+    transition: 0.2s;
+}
+
+.container .contentMyAccount .containerCursosUser p a:hover {
+    color: #3e60db;
+    transition: 0.2s;
+}
+
+.container .contentMyAccount .contentAddCourse {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #00000090;
+    margin-top: 18px;
+}
+
+.container .contentMyAccount .contentAddCourse h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container .contentMyAccount .contentAddCourse form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container .contentMyAccount .contentAddCourse form input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.container .contentMyAccount .contentAddCourse form select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.container .contentMyAccount .contentAddCourse form button {
+    width: 100%;
+    padding: 6px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+}
+
+.container .contentMyAccount .contentCoursesAdded {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #00000090;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.container .contentMyAccount .contentCoursesAdded h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container .contentMyAccount .contentCoursesAdded article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00000090;
+    margin-bottom: 10px;
+}
+
+.container .contentMyAccount .contentCoursesAdded article h2 {
+    font-size: 16px;
+    max-width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container .contentMyAccount .contentCoursesAdded article h2 span {
+    font-weight: 600;
+}
+
+.container .contentMyAccount .contentCoursesAdded article .containerActionsCourses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .contentMyAccount .contentCoursesAdded article .containerActionsCourses .btnRemove {
+    padding: 5px 10px;
+    background-color: rgb(209, 51, 51);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.container .contentMyAccount .contentCoursesAdded article .containerActionsCourses .btnEdit {
+    padding: 5px 10px;
+    background-color: rgb(51, 114, 209);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #00000090;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #00000090;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser:hover {
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser img {
+    height: 100px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser .infoCourseAcquiredUser {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser .infoCourseAcquiredUser h1 {
+    font-size: 20px;
+}
+
+.container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser .infoCourseAcquiredUser h2 {
+    font-size: 16px;
+}
+
+.containerModal .dialogModal .contentModal {
+    border-radius: 0px;
+}
+
+.containerModal .dialogModal .contentModal .modalBody form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerModal .dialogModal .contentModal .modalBody form input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.containerModal .dialogModal .contentModal .modalBody form select {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    outline: none;
+}
+
+.containerModal .dialogModal .contentModal .modalBody button {
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(51, 114, 209);
+    color: #fff;
+    border: none;
+    font-size: 15px;
+}
+
+.containerModal .dialogModal .contentModal .modalHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerModal .dialogModal .contentModal .modalHeader button {
+    border: 1px solid #00000090;
+    background-color: #fff;
+    padding: 4px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.containerModal .dialogModal .contentModal .modalHeader button:hover {
+    transition: 0.2s;
+    background-color: #000;
+    color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+    .container .contentMyAccount .contentCoursesAdded article {
+        flex-direction: column;
+        align-items: start;
+    }
+    .container .contentMyAccount .contentCoursesAdded article h2 {
+        max-width: 90%;
+        margin-bottom: 10px;
+    }
+    .container .contentMyAccount .contentCoursesAdded article .containerActionsCourses .btnRemove {
+        padding: 5px 30px;
+    }
+    
+    .container .contentMyAccount .contentCoursesAdded article .containerActionsCourses .btnEdit {
+        padding: 5px 35px;
+    }
+    .container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser {
+        flex-direction: column;
+    }
+    .container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser img {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser .infoCourseAcquiredUser h1 {
+        font-size: 16px;
+    }
+
+    .container .contentMyAccount .contentCoursesInMyAccount .containerCourseAcquiredUser .infoCourseAcquiredUser h2 {
+        font-size: 14px;
+    }
+}
